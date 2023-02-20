@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+	int i, l1, l2, n, num;
+   
+    scanf("%d",&n);
+    for(i = 0; i < n; i++)
+	 {
+         scanf("%d", &num);
+         if(i == 0) 
+		 {
+              num = l1 = l2;
+         }
+         if(num > l1)
+		  {
+              l2 = l1; 
+              l1 = num; 
+          } 
+		 else if(num > l2) 
+		 {
+              l2 = num;
+     	 }
+ 	}
+ 	printf(" the second largest number : %d", l2);
+}
